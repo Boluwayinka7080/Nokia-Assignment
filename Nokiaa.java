@@ -518,17 +518,33 @@ public class Nokiaa{
                     String clockChoice = input.next();
 
                     switch(clockChoice){
-                        case "1": System.out.println("Alarm clock"); break;
-                        case "2": System.out.println("Clock settings"); break;
-                        case "3": System.out.println("Date settings"); break;
-                        case "4": System.out.println("Stopwatch"); break;
-                        case "5": System.out.println("Countdown timer"); break;
-                        case "6": System.out.println("Auto update"); break;
+                        case "1": 
+                            System.out.println("Alarm clock"); 
+                            break;
+                        case "2": 
+                            System.out.println("Clock settings"); 
+                            break;
+                        case "3": 
+                            System.out.println("Date settings"); 
+                            break;
+                        case "4": 
+                            System.out.println("Stopwatch"); 
+                            break;
+                        case "5": 
+                            System.out.println("Countdown timer"); 
+                            break;
+                        case "6": 
+                            System.out.println("Auto update");
+                            break;
                     }
                     break;
 
-            case "12": System.out.println("Profiles"); break;
-            case "13": System.out.println("SIM services"); break;
+            case "12": 
+                    System.out.println("Profiles"); 
+                    break;
+            case "13": 
+                    System.out.println("SIM services"); 
+                    break;
         }
     }
 }
