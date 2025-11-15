@@ -257,8 +257,302 @@ public class Nokiaa{
                                     System.out.println("Invalid input");
                             }
                             break;
+        
+                        case "6":
+                            System.out.println("Show call costs");
+
+                            String callCosts = """
+                                    1. Last call cost
+                                    2. All calls cost                   
+                                    3. Clear counters
+                                    """;
+                            System.out.println(callCosts);
+
+                            System.out.print("Enter choice: ");
+                            String callCost = input.next();
+
+                            switch(callCost){
+                                case "1":
+                                    System.out.println("Last call cost");
+                                    break;
+                                case "2":
+                                    System.out.println("All calls cost");
+                                    break;
+                                case "3":
+                                    System.out.println("Counters cleared");
+                                    break;
+                            }
+                            break;
+
+                        case "7":
+                            System.out.println("Call cost settings");
+
+                            String costSettingsMenu = """
+                                    1. Call cost limit
+                                    2. Shows cost in
+                                    """;
+                            System.out.println(costSettingsMenu);
+
+                            System.out.println("Enter choice: ");
+                            String costSettingsChoice = input.next();
+
+                            switch(costSettingsChoice){
+                                case "1":
+                                    System.out.println("Call cost limit");
+                                    break;
+                                case "2":
+                                    System.out.println("Shows costs in");
+                                    break;
+                            }
+                            break;
+
+                       case "8":
+                            System.out.println("Prepaid credit");
+                            break;
+                    }
+                    break;
+
+
+            case "5" :
+                System.out.println("Tones");
+                String tones = """
+                     1. Ringing tone
+                     2. Ringing volume
+                     3. Incoming call alert
+                     4. Composer
+                     5. Messages alert tones
+                     6. Keypad tones
+                     7. Warning and game tones
+                     8. Vibrating alert
+                     9. Screen saver
+                    """;
+
+                    System.out.println(tones);
+
+                    System.out.println("Enter choice");
+                    String toneChoice = input.next();
+                    switch(toneChoice){
+                          case "1" :
+                          System.out.print("Ringing tone");
+                          break;
+                    case "2" :
+                          System.out.print("Ringing volume");
+                          break;
+                    case "3" :
+                          System.out.print("Incoming call");
+                          break;
+                    case "4" :
+                          System.out.print("Composer"); 
+                          break;
+                    case "5" :
+                          System.out.print("Messages alert tones");
+                          break;
+                    case "6" :
+                          System.out.print("Keypad tones");
+                          break;
+                    case "7" :
+                          System.out.print("Warning and game tone");
+                          break;
+                    case "8" :
+                          System.out.print("Vibrating alert");
+                          break;
+                    case "9" :
+                          System.out.print("Screen saver");
+                          break;
+                    }
+                break;
+
+
+           case "6" :
+                 System.out.println("Access settings");
+                 String accessSettings = """
+                    1. Call settings
+                    2. Phone settings
+                    3. Security settings
+                     """;
+                   System.out.print(accessSettings);
+                
+                   System.out.print("Enter selection");
+                   String callSettings = input.next();
+                         case "1" :
+                             System.out.print("Call settings");
+                             String callSettingsMenu = """
+                                1. Automatic redial
+                                2. Speed dialing
+                                3. Call waiting options
+                                4. Own number sending
+                                5. Phone line in use
+                                6. Automatic answer
+                                """;
+                                 System.out.print(callSettingsMenu);
+                
+                               System.out.print("Enter selection");
+                               String callSettingsOptions = input.next();
+                            
+                            switch(callSettingsOptions){
+                                case "1" :
+                                     System.out.print("Automatic redial");
+                                     break;
+                                case "2" :
+                                     System.out.print("Speed dialing");
+                                     break;
+                                case "3" : 
+                                     System.out.print("Call waiting options");
+                                     break; 
+                                 case "4" : 
+                                     System.out.print("Own number sending");
+                                     break;                               
+                                  case "5" : 
+                                     System.out.print("Phone line in use");
+                                     break;                               
+                                   case "6" : 
+                                     System.out.print("Automatic answer");
+                                     break;
+                                    }
+                                     break;   
+                            case "2" :
+                                  System.out.print("Phone settings");
+
+                                  String phoneSettingsMenu = """
+                                   1. Language 
+                                   2. Cell info display
+                                   3. Welcome note
+                                   4. Network selection
+                                   5. Lights
+                                   6. Confirm SIM service actions
+                                        """;
+                                    System.out.print(phoneSettingsMenu);
+                
+                               System.out.print("Enter selection");
+                               String phoneSettingsOptions = input.next();
+                                    switch(phoneSettingsOptions){
+                                case "1" :
+                                     System.out.print("Language");
+                                     break;
+                                case "2" :
+                                     System.out.print("Cell info dispaly");
+                                     break;
+                                case "3" : 
+                                     System.out.print("Welcome note");
+                                     break; 
+                                 case "4" : 
+                                     System.out.print("Network selection");
+                                     break;                               
+                                  case "5" : 
+                                     System.out.print("Lights");
+                                     break;                               
+                                   case "6" : 
+                                     System.out.print("Confirm SIM service actions");
+                                    }
+                                     break;   
+                                   case "3" :
+                                      System.out.print("Security settings");
+
+                                      String securitySettingsMenu = """
+                                       1. PIN code request 
+                                       2. Call barring service
+                                       3. Fixed dialing
+                                       4. Closed user group
+                                       5. Phone security
+                                       6. Change access codes
+                                            """;
+                                         System.out.print(securitySettingsMenu);
+                    
+                                       System.out.print("Enter selection");
+                                       String securitySettingsOptions = input.next();
+                                        switch(securitySettingsOptions){
+                                            case "1" :
+                                                 System.out.print("PIN code request ");
+                                                 break;
+                                            case "2" :
+                                                 System.out.print("Call barring service");
+                                                 break;
+                                            case "3" : 
+                                                 System.out.print("Fixed dialing");
+                                                 break; 
+                                            case "4" : 
+                                                 System.out.print("Closed user group");
+                                                 break;                               
+                                            case "5" : 
+                                                 System.out.print("Phone security");
+                                                 break;                               
+                                           case "6" : 
+                                                 System.out.print("Change access codes");
+                                        }
+                                                   break;  
+                                   case "4" :
+                                        System.out.print("Factory factory settings");
+
+
+               case "7" :
+                    System.out.print("Call divert");
+                    break;
+
+                case "8" :
+                    System.out.print("Games");
+                    break;
+
+                case "9" :
+                    System.out.print("Calculator");
+                    break;
+
+                case "10" :
+                    System.out.print("Reminders");
+                    break;
+                            
+                case "11" :
+                      System.out.print("Clock");
+
+                      String clockMenu = """
+                        1. Alarm clock
+                        2. Clock settings
+                        3. Date settings
+                        4. Stopwatch
+                        5. Countdown timer
+                        6. Auto update of date and time
+                          """;           
+                         System.out.println(clockMenu);
+
+                    System.out.println("Enter choice");
+                    String clockOptions = input.next();
+                    switch(clockOptions){
+                          case "1" :
+                          System.out.print("Alarm lock");
+                          break;
+                          case "2" :
+                              System.out.print("Clock settings");
+                              break;
+                          case "3" :
+                              System.out.print("Date settings");
+                              break;
+                          case "4" :
+                              System.out.print("Stopwatch"); 
+                              break;
+                          case "5" :
+                              System.out.print("Countdown timer");
+                              break;
+                        case "6" :
+                              System.out.print(" Auto update of date and time");
+                              }
+                              break;
+
+                 case "12" :
+                    System.out.print("Profiles");
+                    break;
+
+                case "13" :
+                    System.out.print("SIM services");
+                    break;
+
 
                     }
+
+
+        }
+                  
+
+
+          }
 
 
 
@@ -274,4 +568,4 @@ public class Nokiaa{
 
 
 
-}
+
